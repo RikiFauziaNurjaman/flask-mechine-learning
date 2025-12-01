@@ -42,7 +42,7 @@ def predict():
     return jsonify(
         {
             "meta": {"status": "success", "message": "Prediction"},
-            "data": "Postive" if prediction.tolist()[0] == 1 else "Negative",
+            "data": prediction.tolist()[0],
         }
     )
 
